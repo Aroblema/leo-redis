@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  redis:
+    database: 0
+    timeout: 3000
+    password: root
+    cluster:
+      nodes: 192.168.3.28:8001,192.168.3.29:8002,192.168.3.30:8003,192.168.3.28:8004,192.168.3.29:8005,192.168.3.30:8006
+    lettuce:
+      pool:
+        max-idle: 50
+        min-idle: 10
+        max-active: 100
+        max-wait: 1000

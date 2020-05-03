@@ -17,9 +17,9 @@ public class JedisClusterTest {
     public static void main(String[] args) throws IOException {
 
         JedisPoolConfig config = new JedisPoolConfig();
-        config.setMaxTotal(20);
-        config.setMaxIdle(10);
-        config.setMinIdle(5);
+        config.setMaxTotal(20); // 最大连接数
+        config.setMaxIdle(10); // 最大空闲连接数
+        config.setMinIdle(5); // 最小空闲连接数
 
         Set<HostAndPort> jedisClusterNode = new HashSet<HostAndPort>();
         jedisClusterNode.add(new HostAndPort("192.168.3.28", 8001));
