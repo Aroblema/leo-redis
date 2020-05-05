@@ -2,3 +2,5 @@
 /redis-jedis/target
 /springboot-redis-sentinel-cluster/src/test
 /springboot-redis-sentinel-cluster/.mvn
+/springboot-redis-sentinel-cluster/mvnw
+/springboot-redis-sentinel-cluster/*.cmd
