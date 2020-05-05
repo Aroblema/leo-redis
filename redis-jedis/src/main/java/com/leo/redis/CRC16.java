@@ -14,6 +14,9 @@ public class CRC16 {
     public static void main(String[] args) {
         String str = "name1";
         System.out.println(JedisClusterCRC16.getCRC16(str) % 16384);
+        // redis设计键，使其映射至同一个slot
+        System.out.println(JedisClusterCRC16.getSlot("{user1}:id"));
+        System.out.println(JedisClusterCRC16.getSlot("{user1}:name"));
     }
 
 }

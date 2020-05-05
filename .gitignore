@@ -1,2 +1,4 @@
 /.idea
 /redis-jedis/target
+/springboot-redis-sentinel-cluster/src/test
+/springboot-redis-sentinel-cluster/.mvn

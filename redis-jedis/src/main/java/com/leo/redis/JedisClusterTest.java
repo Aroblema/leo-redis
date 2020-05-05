@@ -37,7 +37,7 @@ public class JedisClusterTest {
              * maxAttempts:连接失败重试次数（出现异常最大重试次数）
              */
             jedisCluster = new JedisCluster(jedisClusterNode, 6000, 5000, 10, "root", config);
-            System.out.println(jedisCluster.set("cluster", "redis-cluster"));
+            System.out.println(jedisCluster.set("cluster", "redis-cluster")); // redis分片算法CRC16
             System.out.println(jedisCluster.get("cluster"));
         } catch (Exception e) {
             e.printStackTrace();
